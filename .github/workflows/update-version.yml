@@ -15,8 +15,7 @@ on:
       version:
         type: string
         required: true
-
-
+        
 jobs:
   build:
     name: Update Version
