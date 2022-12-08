@@ -68,7 +68,7 @@ jobs:
       - name: Check 3rd party licenses file
         run: |
           PROJECT_NAME="product-kit-vue"
-          if grep -q [$PROJECT_NAME : ${{ steps.package-version.outputs.current-version}}] 3RD_PARTY_LICENSES.txt
+          if grep -q "$PROJECT_NAME : ${{ steps.package-version.outputs.current-version}}" 3RD_PARTY_LICENSES.txt
           then
               echo "Version has been updated"
           else
